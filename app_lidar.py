@@ -42,16 +42,16 @@ class LidarImage():
                 img[point[0]][point[1]] = 255
         return img
 
-matrix_shape = (600,600)
-
-img = LidarImage(matrix_shape, points)
-
-img1 = img.LIDAR_to_raster()
+# matrix_shape = (600,600)
+#
+# img = LidarImage(matrix_shape, points)
+#
+# img1 = img.LIDAR_to_raster()
 # img2 = img.LIDAR_to_raster([50,100])
-
+#
 # cv2.line(img1, (50,50),(100,100),(100,100,100),5)
-
-cv2.imshow('img', img1)
-cv2.imwrite('img1.jpg',img1)
+#
+# cv2.imshow('img', img1)
+# cv2.imwrite('img1.jpg',img1)
 # cv2.imwrite('img2.jpg',img2)
-cv2.waitKey(0)
+# cv2.waitKey(0)
